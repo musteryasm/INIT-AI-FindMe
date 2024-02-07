@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Input Form</title>
+    <style>
+        body {
+            background: linear-gradient(to bottom, #092253, #101372);
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: row; /* Updated to horizontal direction */
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        h1, h2 {
+            color: #ffffff;
+            text-shadow: 2px 2px 4px #000000;
+            margin-bottom: 20px;
+        }
+        form {
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            text-align: left;
+        }
+        label {
+            color: #7579ff;
+            font-weight: bold;
+            display: block;
+            margin-bottom: 10px;
+            width: 100%;
+        }
+        input[type="text"] {
+            padding: 10px;
+            border: 1px solid #7579ff;
+            border-radius: 5px;
+            margin-bottom: 10px;
+            width: 100%;
+            box-sizing: border-box;
+        }
+        input[type="submit"] {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            background-color: #7579ff;
+            color: #ffffff;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            width: 100%;
+        }
+        input[type="submit"]:hover {
+            background-color: #a7a9ff;
+        }
+        .globe {
+            margin-left: 15%; /* Adjusted margin */
+            flex: 1;
+        }
+        .globe img {
+            height: 500px;
+            width: 500px;
+        }
+        .first{
+            margin-left: 15%;
+        }
+    </style>
+</head>
+<body>
+    <div class="first">
+        <h1>Welcome to find me</h1>
+        <h2>Enter your desired location</h2>
+    <form id="userInputForm" method="post" action="/ai">
+        <label for="userInput">Input:</label>
+        <input type="text" id="userInput" name="input">
+        <input type="submit" value="Submit">
+    </form>
+    </div>
+    <div class="globe">
+        <img src="https://i.postimg.cc/wvvvzQff/tt1.png" alt="Globe Image">
+    </div>
+</body>
+</html>
+
