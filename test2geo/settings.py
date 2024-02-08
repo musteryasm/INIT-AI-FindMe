@@ -125,17 +125,15 @@ MEDIA_URL = 'media/'
 
 
 # Default primary key field type
-# ACCESS_KEY = "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"
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 
-# ACCESS_KEY = "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"
-ACCESS_KEY = "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"
+ACCESS_KEY = ""
 
 PROMPT = "You are a geography expert and good at solving puzzles. The main task for you is to identify the name of place from the given input. There can be place already mentioned in the input however you need to critically think about given input and only then determine the actual location that input corresponds to. Try to corelate the information provided in the input to the location as many times location will not be directly mentioned in the input. Keep in mind as a response you should strictly only return location name dont explain anything only tell me the name of place. The input is as follows: "
 
 LANG_PROMPT = "You are a geography expert with great knowledge of languages. Your task is to identify the country name by language. You should only tell me the name of country where the particular language is prominantly used dont write anything. Tell me the country name where is the following language prominantly used: "
 
-GOOGLE_API_KEY = 'AIzaSyC87yMoerHSQWUxJh1-cdnEtdruq7Fpoxc'
+GOOGLE_API_KEY = ''
